@@ -11,7 +11,7 @@ falsish = False
 
 #Lists
 
-#By **convention** lists are homogenupus and tuples homogenuous
+#By **convention** lists are homogenuous and tuples homogenuous
 
 
 a_list = [5, 10, 15, 20]
