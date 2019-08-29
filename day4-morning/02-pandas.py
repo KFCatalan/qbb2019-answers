@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+
+""""
+Usage: ./00--scatter.py
+Compare num exons vs length ... using numpy/pandas!
+"""
+
+
+import sys
+import matplotlib.pyplot as plt
+import pandas as pd
+
+exons = []
+lengths = []
+
+ctab = pd.read_csv(sys.argv[1], sep="\t")
+print(ctab)
+print( type(ctab))
+
+exons =ctab.loc[:,"num_exons"]
+lengths= ctab.loc[:, "length"]
+
+print(ctab)
+
+for i, line in enumerate(open(sys.argv[1])):
+    if i == 0:
+        continue
+    fields  = line.rstrip("\n").split("\t")
+    exons.append(int(fields[6]))
+    lengths.append(int(fields[7]))
+
+fig, ax = plt.subplots()
+ax.scatter( exons, lengths)
+ax.plot( [0,40], [0,20000], color ="red")
+fig.savefig("exon-v-length.png")
+plt.close(fig)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
