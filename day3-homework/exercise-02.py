@@ -35,11 +35,11 @@ for ident, qsequence in qreader:
     for j in range(0, len(qsequence) -k +1):
         kmer = qsequence[j:j+k]
         if kmer in kmers:
-            for i, ident in kmers[kmer]:
-                tseq = target_2_target_seq[ident] 
-                ts = len(tseq)
-                qs = len(qsequence)
-                extend_right = True
+            for i, ident in kmers[kmer]:    # i and ident within kmers[kmer]
+                tseq = target_2_target_seq[ident]  #dictionary identity specifically sent to tseq 
+                ts = len(tseq)              #length of the tseq
+                qs = len(qsequence)         #length of qseq
+                extend_right = True         # boolean sent 
           extended_kmer = kmer 
             while True:
                 if extend_right:
@@ -54,9 +54,13 @@ for ident, qsequence in qreader:
                     break
                  if ts == (i + k) or tseq == (j + k):
                      extend_right = False
-                     
+                     #needs a print statement using 3rd dictionary
+
+# extended_kmers.sort
 
 
+# uniq the match to avoid repeating
+# .append the new_kmerq to the seq j + k
 
                    
     #5 variables needed for exercise #2
