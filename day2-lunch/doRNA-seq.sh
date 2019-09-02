@@ -10,7 +10,7 @@ do
   cp ../rawdata/$SAMPLE.fastq .
   fastqc $SAMPLE.10k.fastq
   hisat2 -p $THREADS -x ../genomes/BDPG6 -U $SAMPLE.10k.fastq -S $SAMPLE_map.sam
-  samtools sort -@ $THREADS $SAMPLE_map.sam -o $SAMPLE_map.bam
+  samtools sort -@ $THREADS $SAMPLE_map.sam -o $SAMPLE_map.bam 
   samtools index $SAMPLE_map.bam
-  stringtie  $SAMPLE_map.bam -e -B -p $THREADS -G ../genomes/BDGP6.Ensembl.81.gtf -o $SAMPLE_map.gtf
+  stringtie  $SAMPLE_map.bam -e -B -p $THREADS -G $ANNOTATION -o $SAMPLE_map.gtf
 done
