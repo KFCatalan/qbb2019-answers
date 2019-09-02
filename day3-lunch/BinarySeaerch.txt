@@ -1,0 +1,7 @@
+21373575
+"pre-mod(mdg4)-O";
+"pre-mod(mdg4)-AA";
+"pre-mod(mdg4)-N";
+5375
+12
+"pre-mod(mdg4)-N";
