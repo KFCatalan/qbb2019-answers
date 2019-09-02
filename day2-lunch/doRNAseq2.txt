@@ -1,0 +1,27 @@
+total 38025672
+-rw-r--r--  1 cmdb  staff     1821705 Aug 27 12:32 -U
+-rw-r--r--@ 1 cmdb  staff        1020 Aug 27 14:29 README.md
+-rw-r--r--  1 cmdb  staff     1991262 Aug 27 11:54 SRR072893.10k.fastq
+-rw-r--r--  1 cmdb  staff      610310 Sep  1 23:06 SRR072893.10k_fastqc.html
+-rw-r--r--  1 cmdb  staff      431318 Sep  1 23:06 SRR072893.10k_fastqc.zip
+-rw-r--r--  1 cmdb  staff      443413 Sep  1 22:54 SRR072893.bam
+-rw-r--r--  1 cmdb  staff      132360 Sep  1 22:54 SRR072893.bam.bai
+-r--r--r--  1 cmdb  staff  4582672018 Aug 27 11:45 SRR072893.fastq
+-rw-r--r--  1 cmdb  staff     1821719 Sep  1 22:54 SRR072893.sam
+-rw-r--r--  1 cmdb  staff      443427 Aug 27 12:46 SRR072893_map.bam
+-rw-r--r--  1 cmdb  staff      132360 Aug 27 12:46 SRR072893_map.bam.bai
+-rw-r--r--  1 cmdb  staff    31572042 Aug 27 13:00 SRR072893_map.gtf
+-rw-r--r--  1 cmdb  staff     1821723 Aug 27 12:34 SRR072893_map.sam
+-r--r--r--  1 cmdb  staff  4295582972 Aug 27 13:18 SRR072903.fastq
+-r--r--r--  1 cmdb  staff  5651719468 Aug 27 13:18 SRR072905.fastq
+-r--r--r--  1 cmdb  staff  4841851938 Aug 27 13:18 SRR072915.fastq
+-rwxr-xr-x@ 1 cmdb  staff          74 Aug 27 11:35 doAnalysis.sh
+-rwxr-xr-x@ 1 cmdb  staff         492 Sep  1 23:00 doRNA-seq.sh
+-rw-r--r--  1 cmdb  staff         142 Sep  1 23:06 doRNAseq.txt
+-rw-r--r--  1 cmdb  staff           0 Sep  1 23:08 doRNAseq2.txt
+-rw-r--r--  1 cmdb  staff     2154166 Sep  1 22:54 e2t.ctab
+-rw-r--r--  1 cmdb  staff     5414339 Sep  1 22:54 e_data.ctab
+-rw-r--r--@ 1 cmdb  staff         331 Aug 27 13:51 exercise-3-README.md
+-rw-r--r--  1 cmdb  staff     1745148 Sep  1 22:54 i2t.ctab
+-rw-r--r--  1 cmdb  staff     2213702 Sep  1 22:54 i_data.ctab
+-rw-r--r--  1 cmdb  staff     2902447 Sep  1 22:54 t_data.ctab
