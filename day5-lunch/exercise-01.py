@@ -14,7 +14,7 @@ from sklearn.decomposition import PCA
 for i, line in enumerate(open(sys.argv[1])):
     if i == 0:
         continue
-    fields = line.rstrip("\n").split("\t")
+    fields = line.rstrip(".py\n").split("\t")
     # protein_region =
     
     if fields[2] == "+":
