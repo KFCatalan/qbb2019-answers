@@ -1,0 +1,5 @@
+*** Processing SRR072893
+Analysis complete for SRR072893.10k.fastq
+*** Processing SRR072903
+*** Processing SRR072905
+*** Processing SRR072915
