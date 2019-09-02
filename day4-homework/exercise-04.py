@@ -24,7 +24,7 @@ x= 0.5 * np.log2(r*g) #x= m
 
 fig, ax = plt.subplots()
 plt.title("Male and Female FPKMs")
-ax.set_xlabel("log FPKM")
+ax.set_xlabel("logFPKM")
 ax.set_ylabel("Frequency")
 
 ax.scatter(x, y, s=3, alpha=0.5)
