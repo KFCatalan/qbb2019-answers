@@ -49,8 +49,7 @@ print (counter)
 
 #Exercise 4
 
-
-
+The difference among categories is the number of flags with each category where reads that aligned had flags such as MD, NH, etc.. The alignments that had issues or did not fun properly were labeled as YT or YF.
 
 
 
