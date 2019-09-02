@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import scipy.stats as stats
 
+
 fpkms = []
 for i, line in enumerate(open(sys.argv[1])):
     if i == 0:
@@ -18,7 +19,6 @@ for i, line in enumerate(open(sys.argv[1])):
     if float(fields[11]) > 0:
         fpkms.append( float(fields[11]))
 
-print(len(fpkms))
 
 my_data = np.log2(fpkms)
     
