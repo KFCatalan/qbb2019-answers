@@ -30,8 +30,12 @@ E) /Users/cmdb/qbb2019-answers/day2-lunch $ stringtie SRR072893_map.bam -e -B -p
 
 grep "SRR072893" SRR072893_map.sam_ cut -f 3 | sort | uniq -c
 
+You retrieve the specified term from the file, cutting on field 3, you then sort it and use uniq -c to to filter out repeats
+
+
 cut -f 3 SRR072893_map.sam | sort | uniq -c
 
+You skip the grep step in order to pull up the file faster but it is now not in a list
 
 
 f = open('SRR072893_map.sam')
@@ -46,10 +50,11 @@ for i, line in enumerate( f ):
 print (counter)
 
 
+You use python code to enumerate the file, skip the "@" and "*" rows and organize it by tabs delimited. The counter helps in keeping track of the number of alignments as well. This bis the fastest method because of its python basis.
 
 #Exercise 4
 
-The difference among categories is the number of flags with each category where reads that aligned had flags such as MD, NH, etc.. The alignments that had issues or did not fun properly were labeled as YT or YF.
+The difference among categories is the number of flags with each category where reads that aligned had flags such as MD, NH, etc.. The alignments that had issues or did not function properly were labeled as YT or YF.
 
 
 
