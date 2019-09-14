@@ -1,0 +1,6 @@
+- "left reads":
+  - "/Users/cmdb/Sept-13th/reads_1.fastq"
+  "orientation": "fr"
+  "right reads":
+  - "/Users/cmdb/Sept-13th/reads_2.fastq"
+  "type": "paired-end"
