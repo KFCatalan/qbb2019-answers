@@ -1,0 +1,136 @@
+Single Cell RNAseq
+
+
+10X barcoded Gel beads
+Ideal: nothing or single cell/enzyme attached to a bead
+
+Made up of read1, 10xbarcode, UMI (Unique Molecular Identifier), poly(dT)
+
+Single cell GEMs with RT reagents in emulsion
+RT primed by poly-dT on bead with UMI
+cDNA gems with cell barcodes and UMIs
+
+Primary Analysis
+
+Align the read seq to genome to ID gene that molec corresponds to
+> 10x pipeline/Cell Ranger uses STAR aligner
+Tabulated y cell barcode and by UMI
+>collapsing duplicate UMIs accounts for PCR, gives molec level counts
+>Take seq errors into account
+Result is a Count Table
+
+
+Secondary Analysis
+
+Quality control and filtering
+normalization
+Dimension reduction
+Clustering and annot.
+Trajectory inference
+Diff. Exp.
+Velocity analysis
+
+
+t-SNE (t-Distributed Stochastic Neighbor Embedding)
+>Constructs prob distr. in original dataspace where point A is likely to pick nearby points as 
+>Place points in lower dimensional space such that the chsance of A choosing B as its neighbor is preserved
+>turning parameter, related to the number of neighbors condsidered in approximating the local distribution
+>>> doesnt preserve global structure, modifies localities of clusters to make them uniform in terms of relations to one another
+
+
+
+
+UMAP: Uniform manifold Approximation and Projection
+
+Assuming
+>Data is uniformly distributed on Riemannian manifold
+>Riemannian metric is locally constant
+>manifold is locally connected
+
+UMAP approximates the underlying manifold and finds a lower dimensional representation that preserves distances within the manifold
+
+
+
+
+
+Part 4 Cell Types
+
+T-test
+
+1. Igfbpl1- Granule neuroblasts, dentate gyrus -Telencephalon
+2. Dbi Mus musculus diazepam binding inhibitor (Dbi)
+3. Stmn2 Excitatory neurons, cerebral cortex
+4. Nrxn3 Excitatory neurons, cerebral cortex
+5. mt-Atp6 Cholinergic enteric neurons
+6. Islr2 Mus musculus immunoglobulin superfamily containing leucine-rich repeat 2 (Islr2)
+7. Nrxn3 Excitatory neurons, cerebral cortex
+8. Hbb-bbs Mus musculus hemoglobin, beta adult s chain (Hbb-bs)
+9. Sparc Cholinergic enteric neurons
+10. Reln Mus musculus reelin (Reln)
+11. Rgs5 Mus musculus regulator of G-protein signaling 5 (Rgs5)
+
+
+
+logreg
+
+
+1. Malat1 us musculus metastasis associated lung adenocarcinoma transcript 1 (non-coding RNA) (Malat1), long non-coding RNA Excitatory neurons, cerebral cortex
+2. Ccna2 Mus musculus cyclin A2 (Ccna2) Neuronal intermidate progenitor cells
+3. mt-Atp6 Cholinergic enteric neurons
+4.lhx6 Mus musculus LIM homeobox protein 6 (Lhx6)
+5. mt-Cytb Afferent nuclei of cranial nerves VI-XII
+6. Zbtb20 Mus musculus zinc finger and BTB domain containing 20 (Zbtb20)
+7. Npas1 Mus musculus neuronal PAS domain protein 1 (Npas1)
+8.Ftl1 Mus musculus ferritin light polypeptide 1 (Ftl1) 
+9. Trem2 Mus musculus triggering receptor expressed on myeloid cells 2 (Trem2)
+10. Reln Mus musculus reelin (Reln)
+11.Col3a1 Mus musculus collagen, type III, alpha 1 (Col3a1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
